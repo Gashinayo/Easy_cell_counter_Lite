@@ -121,7 +121,7 @@ if st.session_state.get("calculation_done", False) and "results" in st.session_s
     col1.metric("'접시 1개' 필요 현탁액 부피", f"{results['required_volume']:.3f} mL")
     col2.metric("'총 준비 가능 배양접시 수'", f"{results['available_dishes']} 개")
     st.divider()
-    st.subheader("[3] 자동 분주용 현탁액 제조 (현탁액 모두 사용)")
+    st.subheader("[3] 분주용 현탁액 제조 (현탁액 모두 사용)")
     st.success("✅ **[분주용 현탁액 제조법]**")
     recipe_text = f"""
 1. '세포 현탁액' {results['total_stock_vol']:.3f} mL (전체)에
